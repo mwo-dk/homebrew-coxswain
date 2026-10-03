@@ -1,28 +1,28 @@
 class Coxswain < Formula
   desc "Norton Commander style file manager with Everything-speed search"
   homepage "https://github.com/mwo-dk/coxswain"
-  version "1.27.2"
+  version "1.27.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.2/coxswain-terminal-v1.27.2-aarch64-apple-darwin.tar.gz"
-      sha256 "551843a58d204b3c36a7b21c5afd7d6f9d0a4bffd811b8c914375ce00bbee555"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.3/coxswain-terminal-v1.27.3-aarch64-apple-darwin.tar.gz"
+      sha256 "f03b527292f8f066d9b94dcccac0ddc23306d0c54ce9a73b8b946392eb21b057"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.2/coxswain-terminal-v1.27.2-x86_64-apple-darwin.tar.gz"
-      sha256 "94d9f6d35f667a276009fca4622ea232ec4582273e65842806176cc3936268fb"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.3/coxswain-terminal-v1.27.3-x86_64-apple-darwin.tar.gz"
+      sha256 "1adef7d49f5445ec69ba8ae4f3253d3072d937206ee706101b4694273695b537"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.2/coxswain-terminal-v1.27.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4c232100e45469d938421464a61f39113e14c8f72a5ec71cc676c336736f720a"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.3/coxswain-terminal-v1.27.3-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e64160e76059b7ecc26e96446ddb9a2020e516a6e1d39800fefe9c782966a9c5"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.2/coxswain-terminal-v1.27.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d0530d65ee4f00b70401751ffb9855e8945f5be578d0398ac99783f00b9abd73"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v1.27.3/coxswain-terminal-v1.27.3-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "442be7c850d3f7a64c87bf1740f44718ed7c4d9c8766239b53d6e7310373df1d"
     end
   end
 
