@@ -1,28 +1,28 @@
 class Coxswain < Formula
   desc "Norton Commander style file manager with Everything-speed search"
   homepage "https://github.com/mwo-dk/coxswain"
-  version "2.7.3"
+  version "2.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.7.3/coxswain-terminal-v2.7.3-aarch64-apple-darwin.tar.gz"
-      sha256 "f6f1012c8b6c91044e30f94a2855c918afe8cb745ada0838ce788a56ba8bf440"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.8.1/coxswain-terminal-v2.8.1-aarch64-apple-darwin.tar.gz"
+      sha256 "cc569f3fb254bb13fefc47869f693a857464d3c0a1c51a08008291df52716a93"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.7.3/coxswain-terminal-v2.7.3-x86_64-apple-darwin.tar.gz"
-      sha256 "9076cb2c8ec45372f511b07882c367e345841dcb082ffeb29207ccaee211d221"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.8.1/coxswain-terminal-v2.8.1-x86_64-apple-darwin.tar.gz"
+      sha256 "6e13ae1a4611239af14710a293bd82da9c496098b82b196b49180440e8379853"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.7.3/coxswain-terminal-v2.7.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "77f79eaf573f2f59757506f1a1b5d3fddf38c590523876166fc30d7dec22e6e4"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.8.1/coxswain-terminal-v2.8.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9b29bf7d8958227436cb5af3cd2f5432bdf7122e25f2cbd9380a9c649cc00097"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.7.3/coxswain-terminal-v2.7.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b39bc927445a18fd5d835b1a9a570cf47416347241e327ed05af82d4c1ec8ff8"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.8.1/coxswain-terminal-v2.8.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e424749b5c8910b56f2e448746ebe022fb3176db5862839c1c311b8cc589be32"
     end
   end
 
