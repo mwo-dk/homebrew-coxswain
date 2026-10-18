@@ -1,8 +1,8 @@
 cask "coxswain-gui" do
-  version "2.27.6"
-  sha256 arm:          "4cc7e7bce13ad02de35d86cda27f427372c6603d00e2a8f5fb742cb58b7992f2",
-         intel:        "f59871a84e1b138d6919be9eef40c8c1138aeb508565a66c462384d7c6d83832",
-         x86_64_linux: "c0507f6e3518ecd381a32b1b06dbe8acba9cf4d7c5ba9b5760b240307bfe970e"
+  version "2.27.8"
+  sha256 arm:          "7a8b3bf8f11da28785fec0780094ac8dd1d2cddd84f7dac91ba6e5b078c176e7",
+         intel:        "5112641b049942a8b726aa327a147c93bf4068b4a124aaa9b263f01c87658bdf",
+         x86_64_linux: "60c63f50566a0da6265cc32525d2058e63b4c8479eb49bcd94a9fce01fe82caa"
 
   on_macos do
     arch arm: "aarch64", intel: "x64"
