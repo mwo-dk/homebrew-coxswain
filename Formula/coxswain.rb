@@ -5,23 +5,23 @@ class Coxswain < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.1/coxswain-terminal-v2.34.1-aarch64-apple-darwin.tar.gz"
-      sha256 "e1b35fd25d0f2c09a4d5840abbf561c6d03dfe77fbe507734f36242a1d36656f"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.2/coxswain-terminal-v2.34.2-aarch64-apple-darwin.tar.gz"
+      sha256 "170e96b620e33b3f41be919820cfcff75526c78a149364fe0ff0c21143bb4d7e"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.1/coxswain-terminal-v2.34.1-x86_64-apple-darwin.tar.gz"
-      sha256 "bcf466c2cc38fe45a6d079276bf5f54eb6ed4afe99347e64b0dc5398eaf270d4"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.2/coxswain-terminal-v2.34.2-x86_64-apple-darwin.tar.gz"
+      sha256 "e16e317117c2999b003070646fd2cabaf8535096e1a19bd5dcf91e9b35217e22"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.1/coxswain-terminal-v2.34.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9405e42ea8121ec677b807f425443a945fde4be9e5902b458e99925a6f6b6778"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.2/coxswain-terminal-v2.34.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "538da149203537356b473b3b5cb72cddea02f9ac06646ac9c674d7474e261045"
     end
     on_intel do
-      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.1/coxswain-terminal-v2.34.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "67fdaec32f77b2d0e21676b5ce9d95d16f570007d4a2402a12c489b15f52b610"
+      url "https://github.com/mwo-dk/coxswain/releases/download/v2.34.2/coxswain-terminal-v2.34.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "62aee587808606072d705f50a131a2418d6b636a3c573c5dadd0ba08026d4fc4"
     end
   end
 
