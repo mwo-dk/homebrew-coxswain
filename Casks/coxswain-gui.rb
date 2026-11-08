@@ -1,8 +1,8 @@
 cask "coxswain-gui" do
-  version "2.35.1"
-  sha256 arm:          "1825569c6ff086f94446737fc822dc4b7ee1f748f44f96c791520bc0e8445727",
-         intel:        "f1792f0b7d3018043cf130b1265ea448a61cdc281d8f37d9e792187ce5249cfb",
-         x86_64_linux: "77729a1799cc1f5e03c3e13219c013563bff7f0c53326eb1fb45af50f3185721"
+  version "2.36.0"
+  sha256 arm:          "8409dd831fbc877347fcc7755c55c520ef658eecfba443bdbec2be24283644dc",
+         intel:        "d354a5b7ec26880989e787a2c2a3017f7323e3133955e9d2a45bdc7e571c17e9",
+         x86_64_linux: "4e0a186c398c8b52f62dbda76c6500915e630d57529f6061df7cd168d5417ad8"
 
   on_macos do
     arch arm: "aarch64", intel: "x64"
@@ -36,9 +36,21 @@ cask "coxswain-gui" do
     end
   end
 
-  # Config and state in the coxswain config folder stay: the terminal app shares them.
-  zap trash: [
-    "~/Library/Caches/coxswain",
-    "~/Library/WebKit/dk.mwo.coxswain",
-  ]
+  # The search helper runs from inside the bundle: stopped before an upgrade or uninstall
+  # replaces it, or macOS kills it and reports a crash. A launchctl remove, not the uninstall
+  # stanza's launchctl, which would delete the LaunchAgent and so turn off Start with my session; launchd loads it
+  # again at login, and the next app start hands it back at once.
+  uninstall_preflight_steps do
+    on_macos do
+      run "/bin/launchctl", args: ["remove", "dk.mwo.coxswain.index"], must_succeed: false
+    end
+  end
+
+  # Config and state in the coxswain config folder stay: the terminal app shares them. The
+  # LaunchAgent goes with --zap only.
+  zap launchctl: "dk.mwo.coxswain.index",
+      trash:     [
+        "~/Library/Caches/coxswain",
+        "~/Library/WebKit/dk.mwo.coxswain",
+      ]
 end
